@@ -13,6 +13,8 @@
 	padding-top: 3rem;
 	padding-bottom: 1.5rem;
 }
+
+
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .gallery-container .gallery-content .image-container {
     float: left;
@@ -21,9 +23,41 @@
 }
 
 
-
 .image-container img{
     width:100%;
+	 opacity: 0.8;
+     cursor: pointer;
+}
+
+
+
+.image-container img:hover {
+  opacity: 1;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.expand-image-container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
 }
 
 /* Small devices (landscape phones, 576px and up)*/

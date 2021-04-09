@@ -147,6 +147,68 @@
 
 	
 	
+<!-- GALLERY CONTENT -->
+<div class="container-fluid gallery-container">
+    <div class="row gallery-description text-center justify-content-center align-items-center text-light bg-color-6">
+        <div class="col-sm-12 col-md-8 col-xl-6 font-weight-normal">
+            <h1 class="display-5">Starry Training Institute</h1>
+            <p>
+          Gallery of our dedicated vibrant team
+                <br/>
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="gallery-content">
+            <div class="image-container"><img
+                    src="https://drive.starrytraininginstitute.com/wl/?id=KCove504McpswztEui5CdrKZwJl697uu"
+                    alt="https://drive.starrytraininginstitute.com/wl/?id=KCove504McpswztEui5CdrKZwJl697uu" onclick="myFunction(this);"></div>
+            <div class="image-container"><img
+                    src="https://drive.starrytraininginstitute.com/wl/?id=D5LJ1Hy92LqHDDX8PZaLmxBXeeeAmqxk"
+                    alt="https://drive.starrytraininginstitute.com/wl/?id=D5LJ1Hy92LqHDDX8PZaLmxBXeeeAmqxk" onclick="myFunction(this);"></div>
+            <div class="image-container"><img
+                    src="https://drive.starrytraininginstitute.com/wl/?id=oDVxfFF9lBbGWYIDE52PAPG4oQsRrwot"
+                    alt="https://drive.starrytraininginstitute.com/wl/?id=oDVxfFF9lBbGWYIDE52PAPG4oQsRrwot" onclick="myFunction(this);"></div>
+            <div class="image-container"><img
+                    src="https://drive.starrytraininginstitute.com/wl/?id=3YNnI2NWxC03ti6S88nRuwiElT8yaEmN"
+                    alt="https://drive.starrytraininginstitute.com/wl/?id=3YNnI2NWxC03ti6S88nRuwiElT8yaEmN" onclick="myFunction(this);"></div>
+            <div class="image-container"><img
+                    src="https://drive.starrytraininginstitute.com/wl/?id=3YNnI2NWxC03ti6S88nRuwiElT8yaEmN"
+                    alt="https://drive.starrytraininginstitute.com/wl/?id=3YNnI2NWxC03ti6S88nRuwiElT8yaEmN" onclick="myFunction(this);"></div>
+            <div class="image-container"><img
+                    src="https://drive.starrytraininginstitute.com/wl/?id=UR6o3zUzLsxMm2iv6uzvFa2MkKVeMo1g"
+                    alt="https://drive.starrytraininginstitute.com/wl/?id=UR6o3zUzLsxMm2iv6uzvFa2MkKVeMo1g" onclick="myFunction(this);"></div>
+            <div class="image-container d-none d-lg-block"><img
+                    src="https://drive.starrytraininginstitute.com/wl/?id=UR6o3zUzLsxMm2iv6uzvFa2MkKVeMo1g"
+                    alt="https://drive.starrytraininginstitute.com/wl/?id=UR6o3zUzLsxMm2iv6uzvFa2MkKVeMo1g" onclick="myFunction(this);"></div>
+            <div class="image-container d-none d-lg-block"><img
+                    src="https://drive.starrytraininginstitute.com/wl/?id=y88GqwA7Gj8ZjlHZaEfym82ckOtpo3uw"
+                    alt="https://drive.starrytraininginstitute.com/wl/?id=y88GqwA7Gj8ZjlHZaEfym82ckOtpo3uw" onclick="myFunction(this);"></div>
+        </div>
+    </div>
+</div>
+<!-- //END OF GALLERY CONTENT -->
+
+	
+	
+	
+<!-- The expanding image container -->
+<div class="expand-image-container">
+  <!-- Close the image -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+  <!-- Expanded image -->
+  <img id="expandedImg" style="width:100%">
+
+  <!-- Image text -->
+  <div id="imgtext"></div>
+</div>
+
+
+
+
+<!--// END OF GALLERY -->
+	
 	
 	
 	
@@ -246,22 +308,18 @@
 
 
 <script>
-    let coll = document.getElementsByClassName("collapsible");
-    let i;
-
-    for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function () {
-            this.classList.toggle("active");
-            let content = this.nextElementSibling;
-            if (content.style.maxHeight) {
-                content.style.maxHeight = null;
-                content.style.paddingTop = null;
-            } else {
-                content.style.maxHeight = content.scrollHeight + "px";
-                content.style.paddingTop = "10px";
-            }
-        });
-    }
+function myFunction(imgs) {
+  // Get the expanded image
+  var expandImg = document.getElementById("expandedImg");
+  // Get the image text
+  var imgText = document.getElementById("imgtext");
+  // Use the same src in the expanded image as the image being clicked on from the grid
+  expandImg.src = imgs.src;
+  // Use the value of the alt attribute of the clickable image as text inside the expanded image
+  imgText.innerHTML = imgs.alt;
+  // Show the container element (hidden with CSS)
+  expandImg.parentElement.style.display = "block";
+}
 </script>
 </body>
 </html>
