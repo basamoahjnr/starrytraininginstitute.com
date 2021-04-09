@@ -37,15 +37,27 @@ html {
 }
 
 .bg-color-7{
-    background-color: rgba(0, 2, 1, 0.9) !important;
+    background-color: rgba(0,2,1,0.9)!important;
 }
-
-.mt-6 {
-    padding-top: 10rem !important;
+.p-6 {
+	
+	padding: 10rem !important;
 }
-
-.mb-6 {
-    margin-bottom: 10rem !important;
+.pt-6 {
+	
+	padding-top: 10rem !important;
+}
+.pb-6 {
+	
+	padding-bottom: 10rem !important;
+}
+.pl-6 {
+	
+	padding-left: 10rem !important;
+}
+.pr-6 {
+	
+	padding-right: 10rem !important;
 }
 .text-light {
     color: rgba(218, 165, 32, 1.0) !important;
@@ -159,6 +171,112 @@ html {
 	padding-top: 1rem;
 }
 
+
+/*DESCRIPTION CONTENT*/
+
+.description-wrapper .description-content hr {
+    width: 40%;
+    border: none;
+    border-top: 3px double #ffffff;
+    color: #ffffff;
+    overflow: visible;
+    text-align: center;
+    /*    height: 7px;*/
+}
+
+.description-wrapper .description-content hr:after {
+    background: rgba(0,2,1,0.9);
+    content: '§';
+    padding: 0 4px;
+    position: relative;
+    border-radius: 5px;
+    top: -13px;
+}
+
+/*GALLERY STYLE SHEET*/
+.gallery-wrapper {
+    background-color: white;
+
+}
+/* Clear floats after image containers */
+.gallery-wrapper ::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.gallery-wrapper .gallery-content .image-container {
+    float: left;
+    padding : 2px;
+    width: 50%;
+}
+
+
+.image-container img{
+    width:100%;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+
+
+.image-container img:hover {
+    opacity: 1;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.expand-image-content {
+    position: relative;
+    display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 50px;
+    color: white;
+    font-size: 20px;
+}
+
+/* Closable button inside the image */
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+    .gallery-wrapper .gallery-content .image-container {
+        width: 50%;
+     
+    }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    .gallery-wrapper .gallery-content .image-container {
+        width: 33.33%;
+    
+    }
+}
+
+/* large screens (laptops, 992px and up)*/
+@media (min-width: 992px) {
+    .gallery-wrapper .gallery-content .image-container {
+        width: 25%;
+      
+    }
+}
+
+
+
+
 /*
  * -- TRAINING STYLES --
  * This represents the content area (everything below the blue section)
@@ -182,7 +300,7 @@ html {
 }
 
 
-#training-body .contact-us-wrapper {
+#training-body .contact-wrapper {
     background-color: rgba(0, 2, 1, 0.8);
 }
 
@@ -233,15 +351,12 @@ html {
 
 }
 
+.about-wrapper .about-content {
 
-.about-wrapper {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://cdn.wallpapersafari.com/74/25/xXtiRw.jpg) no-repeat center center fixed;
-    /*  height: 100%;*/
-    background-size: cover;
-    overflow: hidden;
+
 }
 
-.about-us-wrapper .about-us-content hr {
+.about-wrapper .about-content hr {
     width: 50%;
     border: none;
     border-top: 3px double #ffffff;
@@ -251,8 +366,8 @@ html {
     /*    height: 7px;*/
 }
 
-.about-us-wrapper .about-us-content hr:after {
-    background: rgba(41, 43, 46, 1.0);
+.about-wrapper .about-content hr:after {
+    background: rgba(0,2,1,0.9);
     content: '§';
     padding: 0 4px;
     position: relative;
@@ -260,7 +375,17 @@ html {
     top: -13px;
 }
 
-.contact-us-wrapper .contact-us-content a {
+
+.contact-wrapper .contact-content{
+
+}
+
+.contact-wrapper .contact-content{
+    font-size: 3em;
+}
+
+
+.contact-wrapper .contact-content a {
     margin: 1rem 5rem;
 }
 
