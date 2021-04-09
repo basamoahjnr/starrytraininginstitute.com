@@ -9,7 +9,7 @@
     clear: both;
     display: table;
 }
-.gallery-description{
+.description-content{
 	padding-top: 3rem;
 	padding-bottom: 1.5rem;
 }
@@ -24,7 +24,7 @@
 
 
 .image-container img{
-    width:100%;
+     width:100%;
 	 opacity: 0.8;
      cursor: pointer;
 }
@@ -36,7 +36,7 @@
 }
 
 /* The expanding image container (positioning is needed to position the close button and the text) */
-.expand-image-container {
+.expand-image-content {
   position: relative;
   display: none;
 }
@@ -45,7 +45,7 @@
 #imgtext {
   position: absolute;
   bottom: 15px;
-  left: 15px;
+  left: 50px;
   color: white;
   font-size: 20px;
 }
@@ -54,7 +54,7 @@
 .closebtn {
   position: absolute;
   top: 10px;
-  right: 15px;
+  right: 50px;
   color: white;
   font-size: 35px;
   cursor: pointer;

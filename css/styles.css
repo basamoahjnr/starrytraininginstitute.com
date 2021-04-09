@@ -36,10 +36,17 @@ html {
     background-color: rgba(22, 8, 5, 0.8) !important;
 }
 
+.bg-color-7{
+    background-color: rgba(0, 2, 1, 0.9) !important;
+}
+
 .mt-6 {
     padding-top: 10rem !important;
 }
 
+.mb-6 {
+    margin-bottom: 10rem !important;
+}
 .text-light {
     color: rgba(218, 165, 32, 1.0) !important;
 }
@@ -227,7 +234,7 @@ html {
 }
 
 
-.information-container {
+.about-wrapper {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://cdn.wallpapersafari.com/74/25/xXtiRw.jpg) no-repeat center center fixed;
     /*  height: 100%;*/
     background-size: cover;
