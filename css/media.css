@@ -1,0 +1,95 @@
+/* Small devices (landscape phones, 576px and up)*/
+@media (max-width: 576px) {
+    .service {
+        margin-top: 1rem !important;
+    }
+
+}
+
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    .display-4 {
+        font-size: 3.5rem;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+
+    .flash-message-wrapper h2 {
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: bolder;
+    }
+
+    .splash-wrapper .splash-content {
+        height: 100vh;
+        padding-top: 20vh;
+    }
+
+    .gallery-wrapper .gallery-description display-5 {
+        font-size: 2.5rem !important;
+    }
+
+    .contact-us-wrapper .contact-us-content a {
+        margin: 1rem;
+    }
+	
+	.brand-img{
+		height: 5.5rem;
+		width: auto;
+	}
+	
+	.display-3{
+		font-size: 4.5rem;
+	}
+	
+	.display-6{
+		font-size: 2.1rem;
+	}
+	
+	.navbar-brand{
+		height: 5.5rem;
+	}
+
+}
+
+
+/* large screens (laptops, 992px and up)*/
+@media (min-width: 992px) {
+    .navbar-nav {
+        font-weight: bolder !important;
+        padding: 1rem 1rem !important;
+        padding-top: 3.5rem !important;
+        padding-bottom: 0 !important;
+    }
+
+	   .splash-wrapper .splash-content {
+        height: 100vh;
+        padding-top: 35vh;
+    }
+		
+	.brand-img{
+		height: 5.5rem;
+		width: auto;
+	}
+	
+	.display-3{
+		font-size: 4.5rem;
+	}
+	
+	.display-6{
+		font-size: 2.1rem;
+	}
+	
+	.navbar-brand{
+		height: 5.5rem;
+	}
+
+}
+
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+}
+

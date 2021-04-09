@@ -1,0 +1,262 @@
+/* CSS Document */
+
+html {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.bg-color-1 {
+    background-color: rgba(218, 165, 32, 1.0) !important;
+}
+
+.color-1 {
+    background-color: rgba(218, 165, 32, 1.0) !important;
+}
+
+.bg-color-2 {
+    background-color: rgba(0,0,0,1.0) !important;
+}
+
+.bg-color-3 {
+    background-color: rgba(247, 217, 167, 1.0) !important;
+}
+
+.bg-color-4 {
+    background-color: rgba(28, 42, 55, 1.00) !important;
+
+}
+
+.bg-color-5 {
+    background-color: rgba(41, 43, 46, 1.0) !important;
+}
+
+.bg-color-6 {
+    background-color: rgba(22, 8, 5, 0.8) !important;
+}
+
+.mt-6 {
+    padding-top: 10rem !important;
+}
+
+.text-light {
+    color: rgba(218, 165, 32, 1.0) !important;
+}
+
+.text-dark {
+    color: rgba(0,0,0,1.0) !important;
+}
+
+
+.hyper-link {
+    height: 3.5rem;
+    font-weight: bolder;
+    padding: 1rem 1rem;
+}
+
+.display-3{
+	font-size: 2.5rem;
+}
+
+.display-4 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 0.7;
+}
+
+.display-5 {
+    font-size: 1.5rem ;
+    font-weight: 700;
+    line-height: 0.7;
+    text-transform: uppercase;
+}
+
+.display-6{
+	font-size: 1.2rem;
+}
+
+.san-condensed {
+    font-family: 'Open Sans Condensed', sans-serif !important;
+}
+
+/*
+ * -- MENU STYLES --
+ * I want to customize how my .pure-menu looks at the top of the page
+ */
+.home-menu {
+    box-shadow: 0 0 rgba(0, 0, 0, 0.10);
+}
+
+.navbar-brand {
+    height: 4rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: white;
+}
+
+.navbar-brand h1 {
+    line-height: 0.55;
+    text-align: start;
+}
+
+.navbar-brand h2 {
+    letter-spacing: -0.1em;
+    text-align: start;
+    font-weight: bold;
+}
+
+
+.brand-img{
+	padding-bottom: 0.5rem;
+	height: 3.5rem;
+	width: auto;
+}
+
+.dropdown-menu {
+    border: 0 !important;
+    border-radius: 0 !important;
+}
+
+.navbar-nav {
+    font-weight: bolder !important;
+    padding: 1rem 1rem !important;
+    padding-top: .5rem !important;
+    padding-bottom: 0 !important;
+}
+
+.dropdown-menu .dropdown-item {
+    font-weight: bold !important;
+}
+
+.header-wrapper {
+    margin-top: 5rem;
+}
+
+.header-content {
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+/*
+ * -- SPLASH STYLES --
+ * This is the blue top section that appears on the page.
+ */
+.splash-content {
+    text-align: center;
+    text-transform: uppercase;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://wallpapercave.com/wp/wp4850946.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+	padding-top: 1rem;
+}
+
+/*
+ * -- TRAINING STYLES --
+ * This represents the content area (everything below the blue section)
+ */
+
+#training-body {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://wallpapercave.com/wp/wp2286148.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.training-wrapper .training-content {
+    padding-top: 18vh;
+}
+
+
+.training-content {
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 2, 1, 0.5);
+}
+
+
+#training-body .contact-us-wrapper {
+    background-color: rgba(0, 2, 1, 0.8);
+}
+
+
+.flash-message-wrapper {
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.flash-message-wrapper h2 {
+    font-size: 0.7rem;
+}
+
+.training-content .collapsible {
+    background-color: rgb(105,105,105);
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.training-content .active, .training-content .collapsible:hover {
+    background-color: #555;
+}
+
+.training-content .collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.training-content .active:after {
+    content: "\2212";
+}
+
+.training-program {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+
+}
+
+
+.information-container {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://cdn.wallpapersafari.com/74/25/xXtiRw.jpg) no-repeat center center fixed;
+    /*  height: 100%;*/
+    background-size: cover;
+    overflow: hidden;
+}
+
+.about-us-wrapper .about-us-content hr {
+    width: 50%;
+    border: none;
+    border-top: 3px double #ffffff;
+    color: #ffffff;
+    overflow: visible;
+    text-align: center;
+    /*    height: 7px;*/
+}
+
+.about-us-wrapper .about-us-content hr:after {
+    background: rgba(41, 43, 46, 1.0);
+    content: '§';
+    padding: 0 4px;
+    position: relative;
+    border-radius: 5px;
+    top: -13px;
+}
+
+.contact-us-wrapper .contact-us-content a {
+    margin: 1rem 5rem;
+}
+
+.social-content-wrapper {
+    height: 100px;
+}
