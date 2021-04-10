@@ -1,10 +1,10 @@
 
 .site-footer {
-    background-color: #26272b;
+    background-color: rgba(218, 165, 32, 1.0);
     padding: 45px 0 20px;
     font-size: 15px;
     line-height: 24px;
-    color: #737373;
+    color: rgba(0,0,0,1.0);
 }
 
 .site-footer hr {
@@ -25,11 +25,11 @@
 }
 
 .site-footer a {
-    color: #737373;
+    color: rgba(0,0,0,1.0);
 }
 
 .site-footer a:hover {
-    color: #3366cc;
+    color: rgba(0,0,0,1.0);
     text-decoration: none;
 }
 
@@ -43,11 +43,11 @@
 }
 
 .footer-links a {
-    color: #737373;
+    color: rgba(0,0,0,1.0);
 }
 
 .footer-links a:active, .footer-links a:focus, .footer-links a:hover {
-    color: #3366cc;
+    color: rgba(0,0,0,1.0);
     text-decoration: none;
 }
 
@@ -149,7 +149,7 @@
 }
 
 .social-icons a.whatsapp:hover {
-    background-color: #ea4c89
+    background-color: #25D366
 }
 
 @media (max-width: 767px) {
