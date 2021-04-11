@@ -87,6 +87,7 @@ try {
         mail($sendTo, $subject, $emailText, implode("\n", $headers));
 
         header("Location: http://www.starrytraininginstitute.com", true, 301);
+        header('location:http://www.starrytraininginstitute.com?status=',$okMessage);
     }
 } catch (\Exception $e) {
 
