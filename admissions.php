@@ -61,7 +61,6 @@ try {
         $response = $recaptcha->verify($_POST['g-recaptcha-response'], $_SERVER['REMOTE_ADDR']);
 
         if (!$response->isSuccess()) {
-            sendVarDumpToFront($response);
             throw new \Exception('ReCaptcha was not validated.');
         }
 
@@ -74,7 +73,7 @@ try {
             if (isset($fields[$key])) {
                 $emailText .= "$fields[$key]: $value\n";
             }
-            sendVarDumpToFront($_POST);
+
         }
 
         // All the necessary headers for the email.
@@ -87,12 +86,12 @@ try {
         // Send email
         mail($sendTo, $subject, $emailText, implode("\n", $headers));
 
-        $responseArray = array('type' => 'success', 'message' => $okMessage);
+        header("Location: http://www.starrytraininginstitute.com", true, 301);
     }
 } catch (\Exception $e) {
 
     $responseArray = array('type' => 'danger', 'message' => $e->getMessage());
-    sendVarDumpToFront($responseArray);
+
 }
 
 
