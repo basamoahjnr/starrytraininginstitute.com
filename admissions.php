@@ -4,7 +4,7 @@ require('recaptcha-master/src/autoload.php');
 
 // configure
 // an email address that will be in the From field of the email.
-$from = 'info@starrytraininginstitute.com';
+$from = $_POST['email'];
 
 // an email address that will receive the email with the output of the form
 $sendTo = 'admissions@starrytraininginstitute.com';
