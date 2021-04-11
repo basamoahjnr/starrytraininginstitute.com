@@ -24,8 +24,8 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/gallery.css">
     <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/admissions.css">
     <title>Admissions: Starry Training Institute</title>
     <!-- Provide a short description of the page. -->
     <meta name="description"
@@ -84,6 +84,8 @@
 
 </head>
 <body>
+
+
 <!-- Google Tag Manager (noscript) -->
 <noscript>
     <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M5X3TVR"
@@ -91,15 +93,14 @@
 </noscript>
 <!-- ./End Google Tag Manager (noscript) -->
 
-	
-	
-	<!-- HEADER SECTION -->
+
+<!-- HEADER SECTION -->
 <header class="header-wrapper">
     <nav class="header-content navbar navbar-expand-lg nav-full fixed-top bg-color-1">
-		
+
         <a class="navbar-brand san-condensed" href="index.html">
-		<img class="brand-img float-left" src="logo-header.png" alt="logo-header.png">
-			<h1 class="display-3 font-weight-bolder text-dark">STARRY</h1>
+            <img class="brand-img float-left" src="logo-header.png" alt="logo-header.png">
+            <h1 class="display-3 font-weight-bolder text-dark">STARRY</h1>
             <h2 class="display-6 text-dark">Training Institute</h2>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -114,8 +115,9 @@
                 <li class="nav-item">
                     <a class="nav-link text-dark" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
-					<li class="nav-item">
-                    <a class="nav-link text-dark" href="gallery.html" tabindex="-1" aria-disabled="true">Admissions</a>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="admissions.html" tabindex="-1"
+                       aria-disabled="true">Admissions</a>
                 </li>
 
                 <li class="nav-item dropdown">
@@ -135,39 +137,136 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link text-dark" href="contact-about-us.html" tabindex="-1" aria-disabled="true">About</a>
+                    <a class="nav-link text-dark" href="contact-about-us.html" tabindex="-1"
+                       aria-disabled="true">About</a>
                 </li>
-				<li class="nav-item">
+                <li class="nav-item">
                     <a class="nav-link text-dark" href="gallery.html" tabindex="-1" aria-disabled="true">Gallery</a>
                 </li>
-			
+
             </ul>
         </div>
 
     </nav>
 </header>
-<!-- //END OF HEADER SECTION -->
+<!-- /.END OF HEADER SECTION -->
 
-	
-<!-- SOCIAL CONTENT -->
-<div class="container-fluid contact-wrapper">
-    <div class="row contact-content text-white justify-content-center align-items-center pt-3 pb-2 bg-color-2">
-        <!-- TODO use company telephone number -->
-        <a class="btn hyper-link rounded-0 col-sm-12 col-md-3 bg-color-1" href="tel:+233543359526">
-            <i class="fas fa-phone-alt"></i> Call Office</a>
 
-        <!-- TODO use company whatsapp link -->
-        <a class=" btn hyper-link rounded-0 col-sm-12 col-md-3 bg-color-1" href="">
-            <i class="fab fa-whatsapp "></i> Whatsapp Us</a>
+<div class="container admission-wrapper">
+
+    <div class="row admission-content">
+
+        <div class="col-xl-8 offset-xl-2">
+
+            <h1>
+                Application Form
+            </h1>
+
+            <p class="lead">Please fill this form with your application details and you will be contacted upon
+                receipt</p>
+
+
+            <form id="contact-form" method="post" action="contact.php" role="form">
+
+                <div class="messages"></div>
+
+                <div class="controls">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label for="form_name">Firstname *</label>
+                                <input id="form_name" type="text" name="name" class="form-control"
+                                       placeholder="Please enter your firstname *" required="required"
+                                       data-error="Firstname is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label for="form_lastname">Lastname *</label>
+                                <input id="form_lastname" type="text" name="surname" class="form-control"
+                                       placeholder="Please enter your lastname *" required="required"
+                                       data-error="Lastname is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label for="form_email">Email *</label>
+                                <input id="form_email" type="email" name="email" class="form-control"
+                                       placeholder="Please enter your email *" required="required"
+                                       data-error="Valid email is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label for="form_phone">Phone</label>
+                                <input id="form_phone" type="tel" name="phone" class="form-control"
+                                       placeholder="Please enter your phone">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label for="form_program">Program *</label>
+                                <select class="form-control form-select-lg mb-2" id="form_program" name="program"
+                                        required="required" data-error="Please, select your program.">
+                                    <option selected>Select the program you wish to pursue</option>
+                                    <option value="Fork Lift">Fork Lift</option>
+                                    <option value="Dumper Truck">Dumper Truck</option>
+                                    <option value="Excavator">Excavator</option>
+                                    <option value="Backhoe">Backhoe</option>
+                                    <option value="Loader">Loader</option>
+                                    <option value="Grader">Grader</option>
+                                    <option value="Roller">Roller</option>
+                                    <option value="Bulldozer">Bulldozer</option>
+                                    <option value="Health & Safety Management">Health &amp; Safety Management</option>
+                                    <option value="First Aid / Fire Fighting">First Aid / Fire Fighting</option>
+                                    <option value="Welder Engineer">Welder Engineer</option>
+                                    <option value="Plumbing">"Plumbing"</option>
+                                    <option value="Steel Bending">Steel Bending</option>
+                                    <option value="Electrical Wiring">Electrical Wiring</option>
+                                </select>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--TODO remember to change this to secret key-->
+                    <div class="form-group">
+                        <div class="g-recaptcha" data-sitekey="6LdmaaUaAAAAADhNiEsSIL_VA3-UoBMRXTZrygHL"
+                             data-callback="verifyRecaptchaCallback"
+                             data-expired-callback="expiredRecaptchaCallback"></div>
+                        <input class="form-control d-none" data-recaptcha="true" required
+                               data-error="Please complete the Captcha">
+                        <div class="help-block with-errors"></div>
+                    </div>
+
+
+                    <input type="submit" class="btn btn-success btn-send" value="Send message">
+
+                    <p class="text-muted text-warning">
+                        <strong>*</strong> These fields are required.
+                    </p>
+
+                </div>
+
+            </form>
+
+        </div>
 
 
     </div>
+
 </div>
-<!-- //END OF SOCIAL CONTENT -->
-	
-	
-	
-	
+<!-- /. END OF ADMISSION CONTENT-->
+
+
 <!-- FOOTER CONTENT -->
 <div class="footer-wrapper">
     <!-- Site footer -->
@@ -248,8 +347,8 @@
         </div>
     </div>
 </div>
-	<!-- // END FOOTER CONTENT -->
-	
+<!-- /. END FOOTER CONTENT -->
+
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script crossorigin="anonymous"
@@ -262,6 +361,9 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<script src="js/validator.js"></script>
+<script src="js/admissions.js"></script>
 
 </body>
 </html>
