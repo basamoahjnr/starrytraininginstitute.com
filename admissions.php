@@ -33,6 +33,16 @@ $recaptchaSecret = '6Ldecy0UAAAAAG1zC8EESXL6i8jPCWreqwBU_wab';
 
 $responseArray=null;
 
+
+function sendVarDumpToFront( $mixed ){
+    ob_start();
+    var_dump($mixed);
+    $content = ob_get_contents();
+    ob_end_clean();
+    setcookie("var_dump",$content);
+}
+
+
 try {
     if (!empty($_POST)) {
 
@@ -51,6 +61,7 @@ try {
         $response = $recaptcha->verify($_POST['g-recaptcha-response'], $_SERVER['REMOTE_ADDR']);
 
         if (!$response->isSuccess()) {
+            sendVarDumpToFront($response);
             throw new \Exception('ReCaptcha was not validated.');
         }
 
@@ -63,6 +74,7 @@ try {
             if (isset($fields[$key])) {
                 $emailText .= "$fields[$key]: $value\n";
             }
+            sendVarDumpToFront($_POST);
         }
 
         // All the necessary headers for the email.
@@ -78,8 +90,9 @@ try {
         $responseArray = array('type' => 'success', 'message' => $okMessage);
     }
 } catch (\Exception $e) {
-        
+
     $responseArray = array('type' => 'danger', 'message' => $e->getMessage());
+    sendVarDumpToFront($responseArray);
 }
 
 
