@@ -401,7 +401,7 @@ html {
 
 
 /* ADMISSION STYLES*/
-.admission-wrapper h1{
+.admission-wrapper .admission-content h1{
     margin-bottom: 40px;
 }
 
@@ -410,9 +410,7 @@ html {
     color: #333;
 }
 
-.admission-wrapper .admission-content{
-   padding-top: 5rem;
-}
+
 .btn-send {
     font-weight: 300;
     text-transform: uppercase;

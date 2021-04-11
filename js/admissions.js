@@ -8,13 +8,13 @@ $(function () {
         $('input[data-recaptcha]').val("").trigger('change');
     }
 
-    var contactForm = '#contact-form';
+    var contactForm = '#admission-form';
 
     $(contactForm).validator();
 
     $(contactForm).on('submit', function (e) {
         if (!e.isDefaultPrevented()) {
-            var url = "contact.php";
+            var url = "admissions.php";
 
             $.ajax({
                 type: "POST",
