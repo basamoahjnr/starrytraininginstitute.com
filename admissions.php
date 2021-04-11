@@ -86,8 +86,10 @@ try {
         // Send email
         mail($sendTo, $subject, $emailText, implode("\n", $headers));
 
+
+        header('location:http://www.starrytraininginstitute.com?status='.$okMessage);
         header("Location: http://www.starrytraininginstitute.com", true, 301);
-        header('location:http://www.starrytraininginstitute.com?status=',$okMessage);
+
     }
 } catch (\Exception $e) {
 
