@@ -24,7 +24,7 @@ $errorMessage = 'There was an error while submitting the form. Please try again 
 
 // ReCaptch Secret
 //TODO remember to change this to secret key
-$recaptchaSecret = '6Ldecy0UAAAAAG1zC8EESXL6i8jPCWreqwBU_wab';
+$recaptchaSecret = '<SECRETHERE>';
 
 // let's do the sending
 
