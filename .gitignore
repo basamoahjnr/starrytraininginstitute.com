@@ -5,3 +5,12 @@ _notes/
 /bower_components/
 /node_modules/
 /.idea/
+/recaptcha-master/tests/
+/recaptcha-master/examples/
+recaptcha-master/.gitignore
+recaptcha-master/.travis.yml
+recaptcha-master/composer.json
+recaptcha-master/CONTRIBUTING.md
+recaptcha-master/LICENSE
+recaptcha-master/phpunit.xml.dist
+recaptcha-master/README.md

@@ -47,6 +47,7 @@ html {
 	
 	padding-top: 10rem !important;
 }
+
 .pb-6 {
 	
 	padding-bottom: 10rem !important;
@@ -58,6 +59,11 @@ html {
 .pr-6 {
 	
 	padding-right: 10rem !important;
+}
+
+.mt-6 {
+	
+	padding-top: rem !important;
 }
 .text-light {
     color: rgba(218, 165, 32, 1.0) !important;
@@ -391,4 +397,36 @@ html {
 
 .social-content-wrapper {
     height: 100px;
+}
+
+
+/* ADMISSION STYLES*/
+.admission-wrapper .admission-content h1{
+    margin-bottom: 40px;
+}
+
+
+.admission-wrapper .admission-content label {
+    color: #333;
+}
+
+
+.btn-send {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+}
+
+
+.help-block.with-errors {
+    color: #ff5050;
+    margin-top: 5px;
+}
+
+
+.services-wrapper .services-content{	
+	padding-top: 8%;
+	padding-bottom: 8%;
+
 }
