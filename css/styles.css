@@ -62,7 +62,10 @@ html {
 }
 
 .mt-6 {
+<<<<<<< HEAD
 	
+=======
+>>>>>>> bugfix
 	padding-top: 10rem !important;
 }
 .text-light {
@@ -296,7 +299,6 @@ html {
 .training-wrapper .training-content {
     padding-top: 18vh;
 }
-
 
 .training-content {
     background-size: cover;
